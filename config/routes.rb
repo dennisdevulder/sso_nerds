@@ -12,10 +12,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      match "data" => "data#show", via [:get]
+      get 'data' => 'data#show'
     end
   end
-
 
   root to: 'oauth_clients#index'
 end

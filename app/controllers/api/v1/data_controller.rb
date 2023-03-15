@@ -4,7 +4,7 @@ module Api
   module V1
     class DataController < ApplicationController
       def show
-        respond_with ({:super_secret => "oauth_data"})
+        respond_with({ super_secret: 'oauth_data' })
       end
     end
   end
