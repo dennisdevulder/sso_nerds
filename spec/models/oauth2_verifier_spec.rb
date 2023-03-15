@@ -29,7 +29,7 @@ describe Oauth2Verifier do
   it "should generate query string" do
     @verifier.to_query.should == "code=#{@verifier.code}"
     @verifier.state="bbbb aaaa"
-    @verifier.to_query.should == "code=#{@verifier.code}&state=bbbb%20aaaa"
+    @verifier.to_query.should == "code=#{@verifier.code}&state=bbbb+aaaa"
   end
 
   it "should properly exchange for token" do
