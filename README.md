@@ -14,7 +14,7 @@ In order to test the implementation of the Oauth provider and client please foll
 
 `rake db:migrate`
 
-`bundle exec rspec spec to see the test suite`
+`bundle exec rspec spec`
 
 `rails s`
 
