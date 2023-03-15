@@ -11,14 +11,12 @@ gem 'dotenv'
 gem 'dynamic_form'
 gem 'importmap-rails'
 gem 'jbuilder'
-gem 'oauth-plugin'
+gem 'oauth-plugin', path: 'lib/oauth-plugin'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 gem 'redis', '~> 4.0'
 gem 'sprockets-rails'
 gem 'sqlite3'
-gem 'stimulus-rails'
-gem 'turbo-rails'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
