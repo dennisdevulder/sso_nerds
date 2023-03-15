@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
+require 'oauth/rack/oauth_filter'
 
 require 'rails/all'
 
@@ -12,6 +13,7 @@ module NerdsCompanySso
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    config.middleware.use OAuth::Rack::OAuthFilter
 
     # Configuration for the application, engines, and railties goes here.
     #
