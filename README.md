@@ -12,7 +12,7 @@ In order to test the implementation of the Oauth provider and client please foll
 
 `bundle install`
 
-`rake db:migrate`
+`rake db:migrate && rake db:test:prepare`
 
 `bundle exec rspec spec`
 
