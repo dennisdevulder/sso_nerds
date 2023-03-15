@@ -8,6 +8,7 @@ ruby '3.2.1'
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'dotenv'
+gem 'dynamic_form'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'oauth-plugin'
