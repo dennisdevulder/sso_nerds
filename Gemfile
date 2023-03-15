@@ -10,6 +10,7 @@ gem 'dotenv'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'omniauth'
+gem "omniauth-rails_csrf_protection"
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 gem 'redis', '~> 4.0'
