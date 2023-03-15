@@ -7,9 +7,8 @@ class OauthClientsController < ApplicationController
   alias login_required authenticate_user!
 
   def index
-    @client_application = current_user.client_applications.build(user_params)
-    @tokens = current_user.tokens.find :all,
-                                       conditions: 'oauth_tokens.invalidated_at is null and oauth_tokens.authorized_at is not null'
+    @client_applications = current_user.client_applications
+    @tokens = current_user.tokens.where('invalidated_at is null and authorized_at is not null')
   end
 
   def new
@@ -17,7 +16,7 @@ class OauthClientsController < ApplicationController
   end
 
   def create
-    @client_application = current_user.client_applications.build(params[:client_application])
+    @client_application = current_user.client_applications.build(user_params)
     if @client_application.save
       flash[:notice] = 'Registered the information successfully'
       redirect_to action: 'show', id: @client_application.id
@@ -48,7 +47,7 @@ class OauthClientsController < ApplicationController
   private
 
   def user_params
-    params.require(:client_application).permit(:name, :email, :url)
+    params.require(:client_application).permit(:name, :email, :url, :callback_url, :support_url)
   end
 
   def get_client_application
