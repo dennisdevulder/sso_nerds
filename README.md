@@ -19,9 +19,13 @@ In order to test the implementation of the Oauth provider and client please foll
 `rails s`
 
 In order to configure the provider go to http://localhost:3000/oauth_clients/new and make sure all fields are filled in with the following values:
+
 Name: choose a name, doesn't matter
+
 Main App URL: http://localhost:3000
+
 Callback URL: http://localhost:4567/auth/test (the one our Sinatra app will handle, where the server must redirect after successful login)
+
 Support URL: http://localhost:3000/support
 
 in another tab, please cd into the sso_client directory
