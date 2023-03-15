@@ -10,5 +10,12 @@ Rails.application.routes.draw do
   match '/oauth',               via: [:get], to: 'oauth#index', as: :oauth
   devise_for :users
 
+  namespace :api do
+    namespace :v1 do
+      match "data" => "data#show", via [:get]
+    end
+  end
+
+
   root to: 'oauth_clients#index'
 end
