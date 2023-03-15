@@ -4,6 +4,16 @@ AllCops:
   - db/*
   - bin/*
   - spec/**/*
+  - lib/**/**
+  - db/migrate/*
+  - app/models/client_application.rb
 
 Style/Documentation:
   Enabled: false
+Layout/LineLength:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Lint/UselessAssignment:
+  Exclude:
+  - app/controllers/application_controller.rb
