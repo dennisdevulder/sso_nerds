@@ -28,7 +28,7 @@ in another tab, please cd into the sso_client directory
 
 `bundle install`
 
-`change the .env file to match your client_id and client_secret provided`
+`change the app.rb file to match your client_id and client_secret provided`
 
 `ruby app.rb`
 
