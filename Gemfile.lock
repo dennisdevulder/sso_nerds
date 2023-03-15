@@ -113,7 +113,6 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.16.3)
     msgpack (1.6.0)
     multi_json (1.15.0)
@@ -210,8 +209,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.5.2)
-      mini_portile2 (~> 2.8.0)
+    sqlite3 (1.5.2-arm64-darwin)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -252,13 +250,13 @@ DEPENDENCIES
   redis (~> 4.0)
   rspec-rails
   sprockets-rails
-  sqlite3 (~> 1.4)
+  sqlite3
   stimulus-rails
   turbo-rails
   web-console
 
 RUBY VERSION
-   ruby 3.2.1p31
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.3.7
