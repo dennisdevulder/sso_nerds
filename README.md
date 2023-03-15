@@ -18,7 +18,9 @@ In order to test the implementation of the Oauth provider and client please foll
 
 `rails s`
 
-In order to configure the provider go to http://localhost:3000/oauth_clients/new and make sure all fields are filled in with the following values:
+In order to configure the provider go to http://localhost:3000/oauth_clients/new and register for a new account.
+
+After signing up you will be prompted to fill in a new provider, do so with the following values:
 
 Name: choose a name, doesn't matter
 
