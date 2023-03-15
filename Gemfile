@@ -6,11 +6,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.1'
 
 gem 'bootsnap', require: false
+gem 'devise'
 gem 'dotenv'
 gem 'importmap-rails'
 gem 'jbuilder'
-gem 'omniauth'
-gem "omniauth-rails_csrf_protection"
+gem 'oauth-plugin'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 gem 'redis', '~> 4.0'
@@ -25,4 +25,8 @@ end
 
 group :development do
   gem 'web-console'
+end
+
+group :test do
+  gem 'rspec-rails'
 end
